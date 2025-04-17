@@ -1,0 +1,480 @@
+
+
+/* HEADER */
+
+.header {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .headerMenu a {
+    min-height: 90px !important;
+  }
+  
+  .headerMenu a:hover {
+    font-weight: 500 !important;
+  }
+  
+  
+  .boutonCommander {
+    background-color: rgb(220, 159, 150);
+  }
+  
+  .boutonCommander:hover {
+    transition: 0.3s ease;
+    background-color: rgb(192, 46, 68);
+  }
+  
+  .boutonCommander a {
+    color: white !important;
+    font-weight: 500 !important;
+  }
+
+  @media (max-width: 1024px) {
+    .headerMenu a {
+      color: rgb(42, 42, 42) !important;
+      justify-content: center;
+    }
+
+    .boutonCommander a {
+        font-weight: 400 !important;
+      }
+  }
+  
+
+/* FOOTER */
+
+.footerCanetteDecor {
+  position: relative;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+
+.footerCanetteImg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+
+.footerMentions a {
+  font-weight: normal !important;
+}
+
+.footerMentions a:hover {
+  text-decoration:underline ;
+}
+
+
+/* AFFICHAGE FEUILLES DE FOND DECOR ACCEUIL */
+
+.canetteGroup {
+  position: relative;
+}
+
+
+/* Décalages */
+.feuilleGauche {
+  transform: translateX(60%);
+}
+
+.feuilleDroite {
+  transform: translateX(-60%);
+}
+
+
+
+/* TITRE NOUS RENCONTRER */
+
+.titreRencontrer {
+  position: relative;
+  z-index: 1;
+}
+
+.titreRencontrer::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -18vw;
+  transform: translateY(-70%);
+  width: 14vw;
+  aspect-ratio: 1 / 1;
+  background-image: url('/wp-content/uploads/2025/04/Group-2.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+@media (max-width: 600px) {
+
+  .titreRencontrer::before {
+    display:none;
+  }
+}
+
+
+/* Nous rencontrer */
+
+
+.equipeContainerLeaves {
+
+position: relative;
+z-index: 1;
+
+}
+
+.equipeContainerLeaves::after {
+
+  content: '';
+  position: absolute;
+  bottom: 102%;
+  right: 1vw;
+  transform: translateY(10%);
+  width: 15vw;
+  aspect-ratio: 1 / 1;
+  background-image: url('/wp-content/uploads/2025/04/Group_4_tige.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+@media (max-width: 1024px) {
+  .equipeContainerLeaves::after {
+    width: 11vw;
+    bottom: 101%;
+  }
+}
+
+@media (max-width: 767px) {
+  .equipeContainerLeaves::after {
+    bottom: 101%;
+    width: 30vw;
+    right: 0vw;
+  }
+}
+
+
+/* Formulaire Contact */
+
+#wpcf7-f399-p480-o1 {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+#wpcf7-f399-p480-o1 .wpcf7-form {
+  width: 37%;
+}
+
+#wpcf7-f399-p480-o1 .wpcf7-form::before {
+  background-image: url('/wp-content/uploads/2025/04/Group_16.png');
+  content: '';
+  position: absolute;
+  top: 81%;
+  left: -6vw;
+  transform: translateY(-70%);
+  width: 13vw;
+  aspect-ratio: 1 / 1;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+#wpcf7-f399-p480-o1 .wpcf7-form label {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+#wpcf7-f399-p480-o1 input, #wpcf7-f399-p480-o1 textarea {
+  width: 100%;
+  margin-top: 15px;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  box-sizing: border-box;
+  color:black;
+}
+
+#wpcf7-f399-p480-o1 input[type="text"],
+#wpcf7-f399-p480-o1 input[type="email"] {
+  height: 11vh;
+}
+#wpcf7-f399-p480-o1 textarea {
+  resize: none;
+  height: 35vh;
+}
+
+
+/* Bouton d'envoi */
+#wpcf7-f399-p480-o1 input[type="submit"] {
+  display: block;
+  margin:auto;
+  width: 55%;
+  padding: 22px;
+  background-color: #e4bdb5;
+  color: white;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+
+#wpcf7-f399-p480-o1 input[type="submit"]:hover {
+  background-color: rgb(192, 46, 68);
+}
+
+
+@media (max-width: 1024px) {
+  #wpcf7-f399-p480-o1 .wpcf7-form {
+    width: 50%;
+  }
+  #wpcf7-f399-p480-o1 input[type="text"],
+  #wpcf7-f399-p480-o1 input[type="email"] {
+  padding: 8%;
+}
+
+#wpcf7-f399-p480-o1 .wpcf7-form::before {
+  
+  top: 79%;
+}
+
+}
+
+
+@media (max-width: 767px) {
+  #wpcf7-f399-p480-o1 .wpcf7-form {
+    width: 55%;
+}
+
+#wpcf7-f399-p480-o1 textarea {
+  height: 30vh;
+}
+
+#wpcf7-f399-p480-o1 input[type="text"],
+#wpcf7-f399-p480-o1 input[type="email"] {
+  height: 10vh;
+}
+
+#wpcf7-f399-p480-o1 .wpcf7-form::before {
+  width: 18vw;
+  top: 77%;
+  left: -8vw;
+}
+
+}
+
+
+/* Formulaire Commander */
+
+/* Partie 1 (Affichage et quantités) */
+
+.quantiteContainer {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.quantiteContainer .quantiteUnity {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.quantiteContainer .quantiteUnity label {
+  display: none;
+}
+
+.quantiteContainer .quantiteUnity input[type="number"],
+.quantiteContainer .quantiteUnity input[type="number"]::placeholder {
+  text-align: center;
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black !important;
+}
+
+.quantiteContainer .quantiteUnity p {
+  text-align: center;
+}
+
+/* Stylise uniquement les input dans le bloc quantité */
+.quantiteContainer input.wpcf7-form-control[type="number"] {
+  padding: 0;
+  border-radius: 0;
+  width: 45px;
+  height: 65px;
+}
+
+/* Supprimer les flèches sur les champs de quantité uniquement */
+.quantiteContainer input[type="number"],
+.quantiteContainer input[type="number"]::-webkit-inner-spin-button,
+.quantiteContainer input[type="number"]::-webkit-outer-spin-button {
+  -moz-appearance: textfield;     
+  appearance: textfield;
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+/* ============ TABLETTE ============ */
+@media (max-width: 1024px) {
+  .quantiteContainer {
+    gap: 15px;
+  }
+
+
+}
+
+/* Responsive Mobile */
+@media (max-width: 767px) {
+  .quantiteContainer {
+    justify-content: center;
+    margin-top: 6vw;
+    gap: 0;
+  
+}
+  .quantiteContainer .quantiteUnity {
+    width: 37%;
+  }
+
+  .quantiteContainer .quantiteUnity label {
+    display: flex;
+    font-size: 16px;
+    color: white;
+  }
+
+  .quantiteContainer input.wpcf7-form-control[type="number"] {
+    width: 40px;
+    height: 55px;
+  }
+}
+
+
+
+/* Partie 2 (Informations et Livraisons) */
+.infosContainerGlobal {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+  flex-wrap: wrap;
+}
+
+.infosColonne {
+width: 45%;
+}
+
+
+.h-separator {
+  width: 1px;
+  background-color: white;
+  height: auto;
+}
+
+
+/* Titre de colonne (ex : Vos informations) */
+.infosColonne h3 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: white;
+  padding-bottom: 10px;
+}
+
+/* Bloc d’un champ (label + input) */
+.infosBloc {
+  display: flex;
+  flex-direction: column;
+}
+
+.infosColonne .infosBloc:last-child p {
+  margin-bottom:0px;
+}
+
+/* Label */
+.infosBloc label {
+  font-size: 20px;
+  color: white;
+  font-weight: 400;
+}
+
+/* Champ */
+.infosBloc input[type="text"],
+.infosBloc input[type="email"] {
+  margin-top: 8px;
+  padding: 12px 15px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  height: 11vh;
+  box-sizing: border-box;
+  text-align: left;
+  color:black !important;
+}
+
+/* Bouton de Validation */
+
+.wpcf7-submit {
+  display: block;
+  margin: 7vh auto 0 auto;
+  width: 200px;
+  height: 60px;
+  padding: 0;
+  text-align: center;
+  background-color: #e4bdb5 !important;
+  color: white;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+.wpcf7-submit:hover {
+  background-color: rgb(192, 46, 68) !important;
+}
+
+
+/* Validation/Refus formulaire */
+
+.wpcf7-response-output, .wpcf7 form .wpcf7-response-output {
+  color:rgb(255, 255, 255);
+  font-size: 20px;
+  text-align: center;
+}
+
+.wpcf7 .wpcf7-not-valid-tip {
+  font-size: 18px;
+}
+
+/* Responsive Mobile */
+
+@media (max-width: 768px) {
+  .infosContainerGlobal {
+    flex-direction: column;
+    align-items:center;
+    gap: 40px;
+  }
+
+  .infosColonne {
+    width: 80%;
+  }
+
+  .h-separator {
+    width: 80%;
+    background-color: white;
+    height: 1px;
+  }
+
+  .infosBloc input[type="text"],
+  .infosBloc input[type="email"] {
+    font-size: 15px;
+    padding: 10px;
+    font-size: 20px;
+  }
+
+}
