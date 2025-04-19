@@ -312,15 +312,29 @@ z-index: 1;
   height: 65px;
 }
 
-/* Supprimer les flèches sur les champs de quantité uniquement */
-.quantiteContainer input[type="number"],
+
+/* Supprime les flèches dans tous les navigateurs */
+.quantiteContainer input[type="number"] {
+  -moz-appearance: textfield;
+  -webkit-appearance: none;
+  appearance: textfield;
+  margin: 0;
+}
+
+/* Chrome, Safari, Edge */
 .quantiteContainer input[type="number"]::-webkit-inner-spin-button,
 .quantiteContainer input[type="number"]::-webkit-outer-spin-button {
-  -moz-appearance: textfield;     
-  appearance: textfield;
   -webkit-appearance: none;
   margin: 0;
 }
+
+/* Firefox */
+.quantiteContainer input[type="number"]::-moz-number-spin-box,
+.quantiteContainer input[type="number"]::-moz-number-spin-up,
+.quantiteContainer input[type="number"]::-moz-number-spin-down {
+  display: none;
+}
+
 
 
 /* ============ TABLETTE ============ */
